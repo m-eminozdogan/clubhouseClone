@@ -1,9 +1,13 @@
 import './App.css';
+import PlanLayout from './pages/Layouts/PlanLayout';
+import Welcome from './pages/Welcome';
 
 function App() {
   return (
     <div className="App">
-     <h1>asd</h1>
+      <PlanLayout>
+        <Welcome />
+      </PlanLayout>
     </div>
   );
 }
