@@ -17,7 +17,7 @@ function PhoneConfirmation() {
                 Thanks!
             </p>
             <Link to='/code_confirm' className='primaryBtn d-flex align-items-center' >
-                Next <img alt='#' src='/images/nextArrowIcon.svg' className='ml-1' />
+                Next &nbsp;<img alt='#' src='/images/nextArrowIcon.svg' className='ml-1' />
             </Link>
         </div>
     )
