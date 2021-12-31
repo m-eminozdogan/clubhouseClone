@@ -32,3 +32,11 @@ a:hover{
   text-align:center;
   
 }
+.app_layout{
+  background-color:#f2f0e4;
+  heigt:100vh;
+  width:100%;
+  position:relative;
+  max-width:500px;
+  margin:auto;
+}

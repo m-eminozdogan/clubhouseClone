@@ -1,0 +1,7 @@
+.Header{
+    display:flex;
+    align-items:center;
+}
+.Header img {
+    width:25px;
+}
