@@ -7,7 +7,6 @@ import CodeConfirm from './pages/CodeConfirm';
 import AllowNotification from './pages/AllowNotification';
 import AppLayout from './pages/Layouts/AppLayout';
 import Home from './pages/Home';
-import Header from './components/Header';
 
 function App() {
   return (
