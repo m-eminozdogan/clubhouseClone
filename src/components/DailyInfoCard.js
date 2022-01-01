@@ -5,7 +5,21 @@ function DailyInfoCard() {
     console.log(data);
 
     return (
-        <h2>daily card js </h2>
+        <div className={style.dailyInfoCard}>
+            {
+                data.map((item,index)=>(
+
+                    <div key={index}>
+                        <span >{item.time}</span>
+                        <div>
+                            <span>{item.title}</span>
+                            <p>{item.description}</p>
+                        </div>
+                    </div>
+                    
+                ))
+            }
+        </div>
     )
 }
 
