@@ -1,4 +1,4 @@
-import Reect from 'react'
+import React from 'react'
 
 function PlanLayout({ children }) {
 

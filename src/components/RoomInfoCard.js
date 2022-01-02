@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import style from '../style/roomCard.module.css'
 import data from '../data/roomCard.json'
-import {BsChatDots,BsChatDotsFill,BsFillPersonFill, BsPersonFill}  from 'react-icons/bs'
+import { BsChatDots, BsChatDotsFill, BsFillPersonFill } from 'react-icons/bs'
 function RoomInfoCard(props) {
     return (
+
         <div>
             {
-                data.map((item,index) => (
+                data.map((item, index) => (
                     <div key={index}>
                         <div>
                             <div className={style.roomCardContainer}>
@@ -14,21 +15,21 @@ function RoomInfoCard(props) {
                                 <h2>{item.sub_title}</h2>
                                 <div className={style.roomMembers}>
                                     <div>
-                                        <img alt='#' src='/images/user-img.jpg'/>
-                                        <img alt='#' src='/images/user-img2.jpg'/>
+                                        <img alt='#' src='/images/user-img.jpg' />
+                                        <img alt='#' src='/images/user-img2.jpg' />
 
                                     </div>
                                     <div>
-                                        {item.members.map( (person)=>(
-                                            <p>
-                                                {person.first_name} {person.last_name} <BsChatDots/>
+                                        {item.members.map((person, index) => (
+                                            <p key={index}>
+                                                {person.first_name} {person.last_name} <BsChatDots />
                                             </p>
                                         ))}
                                         <p className='d-flex align-items-center'>
                                             <span className='mr-2'>1.8&nbsp;</span>
-                                            <BsFillPersonFill/>
+                                            <BsFillPersonFill />
                                             <span className='mx-2'></span>{" "}
-                                            <span className='mr-2'>5&nbsp;</span><BsChatDotsFill/>
+                                            <span className='mr-2'>5&nbsp;</span><BsChatDotsFill />
                                         </p>
                                     </div>
                                 </div>
@@ -38,6 +39,7 @@ function RoomInfoCard(props) {
                 ))
             }
         </div>
+
     )
 }
 
