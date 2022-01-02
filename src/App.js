@@ -14,12 +14,12 @@ function App() {
 
       <PlanLayout>
         <Routes
-           path={[
-            "/",
-            "/invite",
-            "/code_confirm",
-            "/allow_notification"
-          ]}
+          //  path={[
+          //   "/",
+          //   "/invite",
+          //   "/code_confirm",
+          //   "/allow_notification"
+          // ]}
         >
 
           <Route  path='/' element={<Welcome />} />
@@ -32,9 +32,10 @@ function App() {
       <AppLayout>
         
         <Routes
-           path={[
-            "/home"
-          ]}>
+          //  path={[
+          //   "/home"
+          // ]}
+          >
 
           <Route  path='/home' element={<Home />} />
         </Routes>

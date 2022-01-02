@@ -2,7 +2,7 @@ import React from 'react'
 import style from '../style/dailyInfoCard.module.css'
 import data from '../data/dailyCard.json'
 function DailyInfoCard() {
-    console.log(data);
+   // console.log(data);
 
     return (
         <div className={style.dailyInfoCard}>
