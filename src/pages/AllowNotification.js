@@ -14,8 +14,8 @@ function AllowNotification() {
                         <p>Notifications may include alerts, sounds and icon badges</p>
                     </div>
                     <div className={style.actionBtn}>
-                        <Link to='/home'>Don't Allow</Link>
-                        <Link to='/home'>Allow</Link>
+                        <Link exact to='/home'>Don't Allow</Link>
+                        <Link exact to='/home'>Allow</Link>
                         <img alt='#' src='/images/handIcon.svg' className={style.hand_icon} />
                     </div>
                 </div>

@@ -7,7 +7,7 @@ function PhoneConfirmation() {
     const [value, setValue] = useState()
     return (
         <div className={style.phoneConfirmContainer}>
-            <Link to='/' className={style.backBtn} >
+            <Link exact to='/' className={style.backBtn} >
                 <img alt='#' src='/images/arrow.png' />
             </Link>
             <h1>Enter your phone number</h1>
@@ -16,7 +16,7 @@ function PhoneConfirmation() {
                 <span>Terms of service and Privacy Policy.</span>
                 Thanks!
             </p>
-            <Link to='/code_confirm' className='primaryBtn d-flex align-items-center' >
+            <Link exact to='/code_confirm' className='primaryBtn d-flex align-items-center' >
                 Next &nbsp;<img alt='#' src='/images/nextArrowIcon.svg' className='ml-1' />
             </Link>
         </div>

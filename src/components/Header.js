@@ -8,19 +8,19 @@ function Header() {
                 <img alt='#' src='/images/search.png' />
             </Link>
             <div className={style.nav_items}>
-                <Link to='/friends_invite'>
+                <Link exact to='/friends_invite'>
                     <img alt='#' src='/images/invite.png' />
                 </Link>
 
-                <Link to='/upcoming'>
+                <Link exact to='/upcoming'>
                     <img alt='#' src='/images/calendar.png' />
                 </Link>
 
-                <Link to='/activity'>
+                <Link  exact to='/activity'>
                     <img alt='#' src='/images/noti.png' />
                 </Link>
 
-                <Link to='/profile'>
+                <Link exact to='/profile'>
                     <img alt='#' src='/images/b1.png' />
                 </Link>
             </div>
