@@ -48,7 +48,7 @@ function StartRoom(props) {
                 <span>
                     {
                         room === 'closed' ? 'for people i choose' :
-                            room === 'social' ? 'with people i follow' : 'open for everyone'
+                            room === 'social' ? 'with people i follow' : 'open to everyone'
                     }
                 </span>
             </p>
@@ -63,7 +63,7 @@ function StartRoom(props) {
                 </button>
             </div>
         </>
-    )
+    );
 }
 
 export default StartRoom

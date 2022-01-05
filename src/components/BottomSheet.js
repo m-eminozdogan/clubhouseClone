@@ -18,7 +18,7 @@ export default function BottomSheet(props) {
             <div className={style.BottomSheetContainer}
                 style={{ backgroundColor: props.sheetTitle === 'profile' ? 'transparent' : '' }}
             >
-                {props.sheetTitle == 'new room' ? (
+                {props.sheetTitle === 'new room' ? (
                     <NewRoom
                         cardDetail={props.cardDetail}
                         setSheetVisible={(item) => {
@@ -26,7 +26,7 @@ export default function BottomSheet(props) {
                             props.setItemsVisible(true)
                         }}
                     />
-                ) : props.sheetTitle == 'start room' ? (
+                ) : props.sheetTitle === 'start room' ? (
                     <StartRoom
                         setSheetCreateRoom={props.setSheetCreateRoom}
                         setSheetVisible={(item) => {
@@ -35,15 +35,6 @@ export default function BottomSheet(props) {
                         }}
                     />
                 ) : ("")}
-
-                {/* <StartRoom
-                    setSheetCreateRoom={props.setSheetCreateRoom}
-                    setSheetVisible={(item) => {
-                        props.setSheetVisible(item)
-                        props.setItemsVisible(true)
-                    }}
-                /> */}
-
             </div>
         </SwipeableBottomSheet >
     )

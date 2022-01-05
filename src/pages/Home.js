@@ -49,7 +49,7 @@ function Home() {
                 cardDetail={data.find((item) => item.id === cardId)}
                 setItemsVisible={(item) => setItemsVisible(item)}
                 setSheetCreateRoom={(item) => {
-                    setLoaderVisibility(true)
+                    setLoaderVisibility(true);
                     setTimeout(() => {
                         setSheetCreateRoom(item)
                         setLoaderVisibility(false)
@@ -58,13 +58,13 @@ function Home() {
             />
             <BottomSheet
                 sheetTitle='new room'
-                setItemsVisible={(item) => setSheetCreateRoom(item)}
+                setSheetVisible={(item) => setSheetCreateRoom(item)}
                 sheetVisible={sheetCreateRoom}
                 cardDetail={newRoomData}
                 setItemsVisible={(item) => setItemsVisible(item)}
             />
         </>
-    )
+    ); 
 }
 
 export default Home
