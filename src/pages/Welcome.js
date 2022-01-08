@@ -31,7 +31,7 @@ function Welcome() {
             </div>
             <div className={style.actionBtn}>
                 <Link
-                    exact to='/get_username'
+                    exact to='/invite'
                     className='primaryBtn d-flex align-items-center mb-3'
                 >
                     Get yout username{''}
